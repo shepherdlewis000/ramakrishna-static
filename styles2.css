@@ -1,0 +1,83 @@
+body {
+  background: url("images/building-city-dawn.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+/* Define custom hero class */
+.hero {
+  color: silver;
+  /* margin-top: 5%; */
+  text-align: center;
+  font-size: 65px;
+  /*letter-spacing: -0.50em; */
+  font-family: 'Cedarville Cursive', cursive;
+  padding-bottom: 10px; }
+
+.ima {
+  height: 100px;
+  width: 200px; }
+
+#author {
+  text-align: right;
+  font-size: 15px;
+  margin-right: 60px;
+  /* margin-top and padding-top don't work to make close to preceeding <p> */ }
+
+.con {
+  background-color: silver;
+  padding-top: 20px;
+  padding-bottom: 5px; }
+
+.conflex {
+  display: flex;
+  flex-wrap: wrap; }
+  .conflex div {
+    padding: 20px;
+    width: 100px; }
+
+.table-white {
+  background-color: whitesmoke;
+  /* margin-bottom: 20px;
+	padding-bottom: 20px; */ }
+
+.page-two-h1 {
+  font-size: 60px;
+  text-align: center; }
+
+.lead > a {
+  font-style: italic;
+  font-weight: bold; }
+
+/*Media query to have 2nd page diad.html full name on large displays but shorten on smaller */
+/* Uses CSS pseudoclass to affect */
+@media (min-width: 1000px) {
+  .page-two-h1:before {
+    content: "Ramakrishna Paramahansa"; } }
+
+@media (max-width: 999px) {
+  .page-two-h1:before {
+    content: "Ramakrishna"; } }
+
+.bk-img {
+  padding: 10px; }
+
+div table {
+  /*margin-bottom: 50px !important; */
+  border: solid thin gray; }
+
+/* An exercise of SASS inheritance in styles2.scss */
+/* This in styles2.scss */
+/*
+%bio-paragraph{
+	font-size: 50px;	
+}
+
+.bio-paragraph-1{
+	@extends bio-paragraph;
+	background-color: $color2;
+}
+*/
+/* But why no bio-paragraph in resulting CSS file? below?*/
+/* only a bio-paragraph-1 that @extends bio-paragraph */
+.bio-paragraph-1 {
+  @extends bio-paragraph;
+  background-color: whitesmoke; }
