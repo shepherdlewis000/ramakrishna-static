@@ -1,5 +1,7 @@
 Summary: This is simple static site exercise produced using Bootstrap and SASS/CSS for styling. 
 
+Demo: https://shepherdlewis000.github.io/ramakrishna-static/
+
 All pages have identical Bootstrap navbar component for navigation links.
  
 index.html: Landing page with a Bootstrap container containing a custom hero class for the cursive script which uses a Google font linked in the 
